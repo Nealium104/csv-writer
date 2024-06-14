@@ -15,9 +15,10 @@ def input_rows():
             csv_writer.writerow(headers)
 
         rows = int(input("State how many rows you want to input at a time. I'd suggest doing this in relevant batches. For example, I'll be doing table 1 by state so I can double check the data. "))
+        batch_state_value = input('Name the state for this batch ')
         for row in range(rows):
             # Get user input for each column
-            row_data = input_values(headers)
+            row_data = input_values(headers, batch_state_value)
             rows_remaining = rows - row - 1
             print(f"{row_data}")
             print(f"You have {rows_remaining} rows remaining.")
@@ -29,16 +30,17 @@ def input_rows():
         if another.lower() == 'y':
             input_rows()
 
-def input_values(headers):
-    entry = input(f"Enter values for the row. If there are spaces, wrap them in quotes. There should be {len(headers)} values. ")
+def input_values(headers, state):
+    entry = input(f"Enter values for the row. If there are spaces, wrap them in quotes. There should be {len(headers) - 1} values. ")
     reader = csv.reader(io.StringIO(entry), quotechar='"', skipinitialspace=True)
     pattern = r'(?:"([^"]*)"|(\S+))'
     matches = re.findall(pattern, entry)
     row_data = [x[0] if x[0] else x[1] for x in matches]
+    row_data.insert(0, state)
     if len(row_data) != len(headers):
         print(row_data)
         print(f"Error: you need to enter exactly {len(headers)} values. If there are values with spaces in them (like New York), make sure you're putting them in quotes. This row was not saved. Please try again. ")
-        return input_values(headers)
+        return input_values(headers, state)
     return row_data
 
 input_rows()

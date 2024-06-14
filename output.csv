@@ -1,0 +1,26 @@
+State,City,Latitude Degrees,2 1/2 % Design db,Heating D.D. Below 65,2 1/2 % Design db,Coincident Design wb,Grains Difference 55% RH,Grains Difference 50% RH,Daily Range
+Alabama,Alexander City,33,22,....,93,76,37,44,21M
+Alabama,Anniston AP,33,22,2810,94,76,35,42,21M
+Alabama,Auburn,32,22,....,93,76,37,44,21M
+Alabama,Birmingham AP,33,21,2710,94,75,30,37,21M
+qAlabama,Decatur,34,16,3050,93,74,25,32,22M
+Alabama,Dothan AP,31,27,1400,92,76,39,46,20M
+Alabama,Florence AP,34,21,3199,94,74,23,30,22M
+Alabama,Gadsden,34,20,3000,94,75,30,37,22M
+Alabama,Huntsville AP,34,16,3190,93,74,25,33,23M
+Alabama,Mobile AP,30,29,1520,93,77,44,51,18M
+Alabama,Mobile CO,30,29,1620,93,77,44,51,16M
+Alabama,Montgomery AP,32,25,2250,95,76,33,40,21M
+Alabama,Selma-Craig AFB,32,26,2160,95,77,38,47,21M
+Alabama,Talladega,33,22,....,94,76,33,42,21M
+Alabama,Tuscaloosa AP,33,23,2590,96,76,32,39,22M
+Alaska,Anchorage AP,61,-18,10860,68,58,0,0,15L
+Arizona,Douglas AP,31,31,2630,95,63,0,0,31H
+Arizona,Flagstaff AP,35,4,7290,82,55,0,0,31H
+Arizona,Fort Huachuca AP (S),31,28,2551,92,62,0,0,27H
+Arizona,Nogales,31,32,2150,96,54,0,0,31H
+Alaska,Barrow (S),71,-41,20265,53,50,0,0,12L
+Alaska,Fairbanks AP (S),64,-47,14290,78,60,0,0,24M
+Alaska,Juneau AP,58,1,9080,70,58,0,0,15L
+Alaska,Kodiak,57,13,8860,65,56,0,0,10L
+Alaska,Nome AP,64,-27,14170,62,55,0,0,10L
